@@ -1,0 +1,15 @@
+.principalFour{
+    text-align: center;
+    &_subtitle{
+        padding: 3rem 0;
+    }
+    &_title{
+        @include title;
+    }
+    &_paragraph{
+        @include paragraph;
+    }
+    &_button{
+        @include button;
+    }
+}

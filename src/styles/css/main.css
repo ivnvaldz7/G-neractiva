@@ -1,0 +1,422 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Raleway", "Open Sans";
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h3 {
+  font-size: 12px;
+  color: #3E0C8E;
+  font-family: "Open Sans";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+  color: #646464;
+  font-weight: 400;
+  font-family: "Open Sans";
+}
+
+.header {
+  min-width: 320px;
+  width: 100%;
+  height: 5rem;
+}
+.header i {
+  display: block;
+  width: 135px;
+  height: 42px;
+  background: url("/src/assets/images/Géneractiva_Logo_Isologo_Color.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 500px) {
+  .header i {
+    background-image: url(/src/assets/images/Géneractiva_Logo_Logotipo_color.png);
+  }
+}
+.header_button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header_button__bar {
+  background-color: #5210BC;
+  width: 30px;
+  height: 5px;
+  border-radius: 10px;
+  position: relative;
+}
+.header_button__bar::after, .header_button__bar::before {
+  content: "";
+  position: absolute;
+  background-color: #5210BC;
+  display: block;
+  width: 30px;
+  height: 5px;
+  border-radius: 10px;
+  top: 0.8em;
+}
+.header_button__bar::before {
+  top: -0.8em;
+}
+
+.nav_ul {
+  background-color: #B7B5BA;
+  transform: translateX(-100%);
+  transition: ease-out 0.3s;
+  padding: 2.8rem;
+  opacity: 0.98;
+}
+.nav_ul--show {
+  transform: translateX(0);
+}
+.nav_ul li {
+  padding-bottom: 1.5rem;
+}
+.nav_ul--button {
+  font-size: 15px;
+  color: #F0EBF9;
+  background-color: #3E0C8E;
+  padding: 8px 32px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 7px 7px 18px -13px #3E0C8E;
+  -webkit-box-shadow: 7px 7px 18px -13px #3E0C8E;
+  -moz-box-shadow: 7px 7px 18px -13px #3E0C8E;
+  margin-bottom: 3rem;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.principal_title {
+  font-size: 27px;
+  color: #3E0C8E;
+  line-height: 30px;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+@media (min-width: 600px) {
+  .principal_title {
+    width: 70%;
+  }
+}
+.principal_paragraph {
+  font-weight: 400;
+  font-family: "Open Sans";
+  line-height: 30px;
+  text-align: center;
+}
+.principal_button {
+  font-size: 15px;
+  color: #F0EBF9;
+  background-color: #3E0C8E;
+  padding: 8px 32px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 7px 7px 18px -13px #3E0C8E;
+  -webkit-box-shadow: 7px 7px 18px -13px #3E0C8E;
+  -moz-box-shadow: 7px 7px 18px -13px #3E0C8E;
+  margin-bottom: 3rem;
+  display: block;
+  margin: 3rem auto;
+}
+.principal img {
+  width: 100%;
+  max-width: 600px;
+  padding: 3rem 0;
+}
+
+.principalTwo {
+  background-color: #F0EBF9;
+  text-align: center;
+}
+.principalTwo img {
+  width: 100%;
+  max-width: 600px;
+  padding: 3rem 0;
+}
+.principalTwo_subtitle {
+  padding: 3rem;
+}
+.principalTwo_title {
+  font-size: 27px;
+  color: #3E0C8E;
+  line-height: 30px;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.principalTwo_paragraph {
+  font-size: 16px;
+  color: #646464;
+  font-family: "Open Sans";
+  padding-bottom: 3rem;
+}
+.principalTwo_button {
+  font-size: 15px;
+  color: #F0EBF9;
+  background-color: #3E0C8E;
+  padding: 8px 32px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 7px 7px 18px -13px #3E0C8E;
+  -webkit-box-shadow: 7px 7px 18px -13px #3E0C8E;
+  -moz-box-shadow: 7px 7px 18px -13px #3E0C8E;
+  margin-bottom: 3rem;
+}
+
+.principalThree {
+  text-align: center;
+}
+.principalThree_subtitle {
+  padding: 3rem 0;
+}
+.principalThree_title {
+  font-size: 27px;
+  color: #3E0C8E;
+  line-height: 30px;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.principalThree_paragraph {
+  font-size: 16px;
+  color: #646464;
+  font-family: "Open Sans";
+  padding-bottom: 3rem;
+}
+.principalThree_button {
+  font-size: 15px;
+  color: #F0EBF9;
+  background-color: #3E0C8E;
+  padding: 8px 32px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 7px 7px 18px -13px #3E0C8E;
+  -webkit-box-shadow: 7px 7px 18px -13px #3E0C8E;
+  -moz-box-shadow: 7px 7px 18px -13px #3E0C8E;
+  margin-bottom: 3rem;
+}
+.principalThree_ul {
+  text-align: left;
+  width: 80%;
+  margin: 3rem auto;
+}
+.principalThree_ul li {
+  font-size: 16px;
+  color: #646464;
+  font-family: "Open Sans";
+  padding-bottom: 3rem;
+  font-size: 14px;
+}
+.principalThree_ul li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #3E0C8E;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.principalThree img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.principalFour {
+  text-align: center;
+}
+.principalFour_subtitle {
+  padding: 3rem 0;
+}
+.principalFour_title {
+  font-size: 27px;
+  color: #3E0C8E;
+  line-height: 30px;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.principalFour_paragraph {
+  font-size: 16px;
+  color: #646464;
+  font-family: "Open Sans";
+  padding-bottom: 3rem;
+}
+.principalFour_button {
+  font-size: 15px;
+  color: #F0EBF9;
+  background-color: #3E0C8E;
+  padding: 8px 32px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 7px 7px 18px -13px #3E0C8E;
+  -webkit-box-shadow: 7px 7px 18px -13px #3E0C8E;
+  -moz-box-shadow: 7px 7px 18px -13px #3E0C8E;
+  margin-bottom: 3rem;
+}
+
+.principalContact {
+  text-align: center;
+}
+.principalContact_subtitle {
+  padding: 3rem 0;
+}
+.principalContact_title {
+  font-size: 27px;
+  color: #3E0C8E;
+  line-height: 30px;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.principalContact_paragraph {
+  font-size: 16px;
+  color: #646464;
+  font-family: "Open Sans";
+  padding-bottom: 3rem;
+}
+.principalContact_form {
+  width: 90%;
+  text-align: left;
+  line-height: 30px;
+  margin: 0 auto;
+}
+.principalContact_form--label {
+  font-size: 16px;
+  color: #3E0C8E;
+  display: grid;
+}
+.principalContact_form--label input {
+  width: 90%;
+  height: 40px;
+  background-color: #f4f2f6;
+  border: 0 solid;
+  border-radius: 1rem;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+  color: #646464;
+}
+.principalContact_form--label input::placeholder {
+  font-size: 16px;
+  color: #B7B5BA;
+}
+.principalContact_form--label textarea {
+  background-color: #f4f2f6;
+  border: 0 solid;
+  border-radius: 1rem;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+  color: #646464;
+  resize: none;
+}
+.principalContact_form--label textarea::placeholder {
+  font-size: 16px;
+  color: #B7B5BA;
+  font-family: "Open sans";
+}
+.principalContact_form--button {
+  font-size: 15px;
+  color: #F0EBF9;
+  background-color: #3E0C8E;
+  padding: 8px 32px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 7px 7px 18px -13px #3E0C8E;
+  -webkit-box-shadow: 7px 7px 18px -13px #3E0C8E;
+  -moz-box-shadow: 7px 7px 18px -13px #3E0C8E;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  background-color: #5210BC;
+}
+
+.footer {
+  width: 100%;
+  background-color: #28065e;
+  color: #F0EBF9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  font-family: "Open sans";
+}
+.footer_logo {
+  width: 100%;
+  padding: 3rem;
+  text-align: center;
+}
+.footer_logo--title {
+  font-weight: 400;
+  line-height: 25px;
+  font-size: 18px;
+  letter-spacing: 3.5px;
+}
+.footer_logo--subtitle {
+  font-size: 12px;
+  font-weight: 400;
+}
+.footer_links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 3rem;
+}
+.footer_links a {
+  color: #F0EBF9;
+}
+.footer_workers {
+  width: 100%;
+  height: 100%;
+  background-color: #20044c;
+  padding: 1rem;
+  text-align: center;
+}
+.footer_workers h4 {
+  font-size: 14px;
+  color: #cacaca;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,14 @@
+{
+  "name": "generactiva",
+  "version": "1.0.0",
+  "description": "Página construida con Sass, Html y JS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w src/styles/scss/main.scss:src/styles/css/main.css"
+  },
+  "author": "Ivan Valdez",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.37.5"
+  }
+}

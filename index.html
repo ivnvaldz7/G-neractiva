@@ -1,12 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/css/main.css" />
     <title>GénerActiva</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <figure class="header_img">
+        <i></i>
+      </figure>
+      <div class="header_button" id="icon">
+        <div class="header_button__bar"></div>
+      </div>
+      <nav class="nav" id="nav">
+        <ul class="nav_ul" id="nav-ul">
+          <li><a class="nav_ul--a" href="#">¿Qué hacemos?</a></li>
+          <li><a class="nav_ul--a" href="#">¿Cómo trabajamos</a></li>
+          <li><button class="nav_ul--button">¡Hablemos!</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="principal">
+        <h1 class="principal_title">
+          ¿Buscás asesoramiento para adoptar políticas de equidad de género en
+          tu organización?
+        </h1>
+        <p class="principal_paragraph">
+          En Géneractiva podemos brindarte asesoría para tratar temas
+          relacionados a lo laboral y al género.
+        </p>
+        <button class="principal_button">Quiero saber más</button>
+        <img src="./src/assets/images/01.jpg" alt="" />
+      </section>
+      <section class="principalTwo">
+        <img src="./src/assets/images/02.png" alt="" />
+        <h3 class="principalTwo_subtitle">¿QUE HACEMOS?</h3>
+        <h2 class="principalTwo_title">
+          Acompañamos a las organizaciones que quieren adoptar políticas de
+          igualdad de trato y oportunidades desde una perspectiva de género.
+        </h2>
+        <p class="principalTwo_paragraph">
+          La creciente visibilización de las desigualdades de género mueve a
+          diversos actores sociales hacia la búsqueda de mayor equidad.
+          Elaboramos estrategias para promover espacios laborales libres de
+          violencia y discriminación.
+        </p>
+        <button class="principalTwo_button">Quiero saber más</button>
+      </section>
+      <section class="principalThree">
+        <h3 class="principalThree_subtitle">¿COMO LO HACEMOS?</h3>
+        <h2 class="principalThree_title">
+          Trabajamos de manera personalizada según las necesidades de cada
+          institución
+        </h2>
+        <p class="principalThree_paragraph">
+          cada institución Podemos ofrecerte distintos servicios que se ajustan
+          a las posibilidades y recursos disponibles de tu organización.
+        </p>
+        <button class="principalThree_button">Quiero saber más</button>
+        <ul class="principalThree_ul">
+          <li>
+            Planes integrales de igualdad de oportunidades y trato con
+            perspectiva de género.
+          </li>
+          <li>Capacitaciones y jornadas de formación para organizaciones.</li>
+          <li>Talleres de sensibilización para grupos específicos.</li>
+          <a href="#">Todos nuestros servicios &#10517; </a>
+        </ul>
+        <img src="./src/assets/images/03.jpg" alt="" />
+      </section>
+      <section class="principalFour">
+        <h3 class="principalFour_subtitle">¿QUIENES SOMOS?</h3>
+        <h2 class="principalFour_title">
+          Somos un equipo con formación en género, trabajo y derechos humanos
+        </h2>
+        <p class="principalFour_paragraph">
+          Confluimos desde recorridos previos en investigación, docencia e
+          implementación de políticas públicas. Nuestras experiencias
+          profesionales están forjadas al calor del movimiento feminista que
+          motiva el profundo compromiso con el que hacemos nuestro trabajo.
+        </p>
+        <button class="principalFour_button">Quiero saber más</button>
+      </section>
+      <section class="principalContact">
+        <h3 class="principalContact_subtitle">CONTACTO</h3>
+        <h2 class="principalContact_title">
+          Trabajemos en equipo. Dejanos tu mail y tu consulta. En breve nos
+          pondremos en contacto con vos.
+        </h2>
+        <p class="principalContact_paragraph">
+          Además, podés escribirnos un email a la dirección
+          <a href="#"  rel="noopener noreferrer"
+            >contacto@generactivaconsultorias.com</a
+          >
+        </p>
+        <form action="#" method="post" class="principalContact_form">
+          <label class="principalContact_form--label" for="name"
+            >Nombre y Apellido
+            <input type="text" name="name" id="name" placeholder="Ingrese su nombre" />
+          </label>
+          <label class="principalContact_form--label for="organization"
+            >Organización
+            <input type="text" name="organization" id="organization" placeholder="Ingrese su organización" />
+          </label>
+
+          <label class="principalContact_form--label for="email"
+            >Email
+            <input type="email" name="email" id="email" placeholder="Ingrese su email" />
+          </label>
+          <label class="principalContact_form--label for="textarea"
+            >Mensaje
+            <textarea name="textarea" id="" cols="30" rows="10" placeholder="Ingrese un mensaje"></textarea>
+          </label>
+          <button class="principalContact_form--button">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer_logo">
+        <h2 class="footer_logo--title">GÉNER<strong>ACTIVA</strong></h2>
+        <h4 class="footer_logo--subtitle">trabajo y equidad en acción</h4>
+      </div>
+      <article class="footer_links">
+        <a href="#" >¿Que hacemos?</a>
+        <a href="#" >¿Cómo trabajamos?</a>
+      </article>
+      <article class="footer_workers">
+        <h4><strong>Programación: </strong>Ivan Valdez</h4>
+        <h4><strong>Diseño: </strong>Leila Valdez</h4>
+        <h4><strong>Ilustarción: </strong>Fiona Lena Brown</h4>
+      </article>  
+    </footer>
+    <script src="./index.js"></script>
+  </body>
 </html>

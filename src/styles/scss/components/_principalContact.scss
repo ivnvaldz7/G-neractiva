@@ -1,0 +1,58 @@
+.principalContact {
+  text-align: center;
+  &_subtitle {
+    padding: 3rem 0;
+  }
+  &_title {
+    @include title;
+  }
+  &_paragraph {
+    @include paragraph;
+  }
+  &_form {
+    width: 90%;
+    text-align: left;
+    line-height: 30px;
+    margin: 0 auto;
+    &--label {
+      font-size: 16px;
+      color: $violet;
+      display: grid;
+      & input {
+        width: 90%;
+        height: 40px;
+        background-color: $input;
+        border: 0 solid;
+        border-radius: 1rem;
+        outline: none;
+        padding: 15px;
+        font-size: 16px;
+        color: $darkGrey;
+        &::placeholder {
+          font-size: 16px;
+          color: $softGrey;
+        }
+      }
+      & textarea {
+        background-color: $input;
+        border: 0 solid;
+        border-radius: 1rem;
+        outline: none;
+        padding: 15px;
+        font-size: 16px;
+        color: $darkGrey;
+        resize: none;
+        &::placeholder {
+          font-size: 16px;
+          color: $softGrey;
+          font-family: 'Open sans';
+        }
+      }
+    }
+    &--button {
+      @include button;
+      margin-top: 3rem;
+      background-color: #5210BC;
+    }
+  }
+}

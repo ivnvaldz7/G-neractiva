@@ -1,0 +1,47 @@
+.footer {
+  width: 100%;
+  background-color: $darkViolet;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  font-family: "Open sans";
+  &_logo {
+      width: 100%;
+    padding: 3rem;
+    text-align: center;
+    &--title {
+      font-weight: 400;
+      line-height: 25px;
+      font-size: 18px;
+      letter-spacing: 3.5px;
+    }
+    &--subtitle{
+        font-size: 12px;
+        font-weight: 400;
+    }
+  }
+  &_links {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 3rem;
+    & a {
+      color: $white;
+    }
+  }
+  &_workers{
+      width: 100%;
+      height: 100%;
+      background-color: #20044c;
+      padding: 1rem;
+      text-align: center;
+      & h4{
+        font-size: 14px;
+        color: #cacaca;
+        font-weight: 400;
+        line-height: 25px;
+      }
+  }
+}
