@@ -14,7 +14,7 @@
   }
   &_ul {
     text-align: left;
-    width: 80%;
+    width: 75%;
     margin: 3rem auto;
     & li {
       @include paragraph;
@@ -33,5 +33,18 @@
   & img {
     width: 100%;
     max-width: 600px;
+  }
+  @media (min-width: 700px) {
+    &_subtitle,
+    &_title,
+    &_paragraph,
+    & img {
+      width: 75%;
+      margin: 0 auto;
+    }
+    &_title,
+    &_paragraph{
+        text-align: left;
+    }
   }
 }

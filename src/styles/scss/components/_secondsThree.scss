@@ -1,0 +1,36 @@
+.secondsThree {
+  width: 100%;
+  background-color: $softViolet;
+  text-align: center;
+}
+.secondsThree_text {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0;
+  &--title {
+    @include title;
+  }
+  &--form{
+      & input{
+        width: 80%;
+        height: 40px;
+        background-color: #cfc2e8;
+        border: 0 solid;
+        border-radius: 1rem;
+        outline: none;
+        padding: 15px;
+        font-size: 16px;
+        color: $darkGrey;
+        margin-top: 5rem;
+        &::placeholder {
+          font-size: 16px;
+          color: $darkGrey;
+        }
+      }
+      & button{
+          @include button;
+          margin-top: 3rem ;
+          background-color: $middleViolet;
+      }
+  }
+}

@@ -5,16 +5,16 @@
   padding: 8px 32px;
   border: none;
   border-radius: 25px;
+  margin-bottom: 3rem;
   box-shadow: 7px 7px 18px -13px $violet;
   -webkit-box-shadow: 7px 7px 18px -13px $violet;
   -moz-box-shadow: 7px 7px 18px -13px $violet;
-  margin-bottom: 3rem;
+  cursor: pointer;
 }
 @mixin  title() {
   font-size: 27px;
   color: $violet;
   line-height: 30px;
-  text-align: center;
   padding-bottom: 3rem;
 }
 @mixin paragraph {

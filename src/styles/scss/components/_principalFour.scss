@@ -1,15 +1,29 @@
-.principalFour{
-    text-align: center;
-    &_subtitle{
-        padding: 3rem 0;
+.principalFour {
+  text-align: center;
+  &_subtitle {
+    padding: 3rem 0;
+  }
+  &_title {
+    @include title;
+  }
+  &_paragraph {
+    @include paragraph;
+  }
+  &_button {
+    @include button;
+  }
+
+  @media (min-width: 700px) {
+    &_subtitle,
+    &_title,
+    &_paragraph,
+    & img {
+      width: 75%;
+      margin: 0 auto;
     }
-    &_title{
-        @include title;
+    &_title,
+    &_paragraph {
+      text-align: left;
     }
-    &_paragraph{
-        @include paragraph;
-    }
-    &_button{
-        @include button;
-    }
+  }
 }

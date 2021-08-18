@@ -1,0 +1,19 @@
+.secondsTwo{
+    width: 100%;
+    background-color: $white;
+    text-align: center;
+}
+.secondsTwo_text{
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+.secondsTwo_image img{
+    width: 100%;
+    max-width: 600px;
+}
+.secondsTwo_text{
+    &--title{
+        @include title;
+    }
+}

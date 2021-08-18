@@ -1,0 +1,38 @@
+.main{
+    padding-top: 5rem;
+}
+.seconds{
+    width: 100%;
+}
+.second_text,
+.seconds_cards{
+    width: 90%;
+    margin: 0 auto;
+}
+.second_text{
+    text-align: center;
+    &--subtitle{
+        padding: 3rem 0
+    }
+    &--title{
+        @include title;
+    }
+}
+.seconds_cards{
+    margin-top: 3rem;
+}
+.second_card{
+    text-align: center;
+    padding: 1rem 0;
+    & img{
+        width: 98px;
+        height: 98px;
+        background-color: $softViolet;
+        border-radius: 50%;
+    }
+    &--title{
+        font-size: 24px;
+        color: $violet;
+        padding: 1rem 0;
+    }
+}
