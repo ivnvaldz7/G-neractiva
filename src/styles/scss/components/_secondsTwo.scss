@@ -2,11 +2,20 @@
     width: 100%;
     background-color: $white;
     text-align: center;
+    @media (min-width: 950px) {
+        display: flex;
+    }
 }
 .secondsTwo_text{
     width: 90%;
     margin: 0 auto;
     padding: 3rem 0;
+    @media (min-width: 950px) {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 .secondsTwo_image img{
     width: 100%;
@@ -15,5 +24,9 @@
 .secondsTwo_text{
     &--title{
         @include title;
+    }
+    &--paragraph{
+        text-align: left;
+        padding-left: 5rem;
     }
 }

@@ -1,0 +1,65 @@
+.thirdTwo {
+  width: 100%;
+  padding-top: 5rem;
+  &_wrraper{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    &--text{
+      padding: 2rem 0;
+    }
+    &--img{
+      min-width: 300px;
+      padding: 2rem 0;
+      & img{
+        max-width: 100%;
+      }
+    }
+    @media (min-width: 700px) {
+      &--text{
+        width: 30%;
+      }
+    
+    }
+  }
+  
+}
+.thirdTwo_text {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  &--title {
+    @include title;
+  }
+  &--ul {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    @media (min-width: 700px) {
+      padding-top: 5rem;
+    }
+    & li {
+      @include paragraph;
+      font-size: 14px;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: $violet;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+    }
+  }
+  @media (min-width: 950px) {
+    &--ul{
+      display: flex;
+      justify-content: space-between;
+      & li{
+        width: 25%;
+      }
+    }
+  }
+}

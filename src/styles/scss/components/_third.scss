@@ -1,0 +1,43 @@
+.main{
+    padding-top: 10rem;
+}
+.third{
+    width: 100%;
+    text-align: center;
+    @media (min-width: 950px) {
+        width: 90%;
+    }
+    &_title{
+        @include title;
+    }
+    &_cards{
+        width: 100%;
+        @media (min-width: 700px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+            margin-bottom: 5rem;
+        }
+    }
+}
+.third_card{
+    width: 90%;
+    margin: 1rem auto;
+    & img{
+        width: 93px;
+        height: 93px;
+    }
+    &--title{
+        font-size: 24px;
+        color: $violet;
+        line-height: 30px;
+    }
+    @media (min-width: 700px) {
+        &--title{
+            padding-bottom: 1rem;
+        }
+        &--paragraph{
+            text-align: left;
+        }
+    }
+}

@@ -3,6 +3,9 @@
 }
 .seconds{
     width: 100%;
+    @media (min-width: 950px) {
+        margin-bottom: 10rem;
+    }
 }
 .second_text,
 .seconds_cards{
@@ -20,6 +23,10 @@
 }
 .seconds_cards{
     margin-top: 3rem;
+    @media (min-width: 950px) {
+        display: flex;
+        justify-content: center;
+    }
 }
 .second_card{
     text-align: center;
@@ -34,5 +41,10 @@
         font-size: 24px;
         color: $violet;
         padding: 1rem 0;
+    }
+    @media (min-width: 950px) {
+        &{
+            width: 30rem;
+        }
     }
 }

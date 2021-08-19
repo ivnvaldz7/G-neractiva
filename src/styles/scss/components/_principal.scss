@@ -6,39 +6,33 @@
   align-items: center;
   padding-top: 5rem;
 }
-.principal {
-  margin: 3rem 0;
+.principals {
+  width: 100%;
   text-align: center;
-
-  &_title {
-    @include title;
+  @media (min-width: 800px) {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    padding: 0 5rem;
   }
-  &_paragraph {
-    font-weight: 400;
-    font-family: "Open Sans";
-    line-height: 30px;
-  }
-  &_button {
-    @include button;
-    display: block;
-    margin: 3rem auto;
-  }
-  & img {
+  &_img img {
     width: 100%;
     max-width: 600px;
     padding: 3rem 0;
   }
-  @media (min-width: 700px) {
-    &_subtitle,
-    &_title,
-    &_paragraph,
-    & img {
-      width: 75%;
-      margin: 0 auto;
-    }
-    &_title,
-    &_paragraph {
-      text-align: left;
-    }
+}
+.principal_text{
+  &--title{
+    @include title;
+  }
+  &--button{
+    @include button;
+    margin: 3rem auto;
+  }
+  @media (min-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
   }
 }
+  

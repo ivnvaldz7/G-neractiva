@@ -6,7 +6,7 @@
 .secondsThree_text {
   width: 90%;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 5rem 0;
   &--title {
     @include title;
   }
@@ -31,6 +31,12 @@
           @include button;
           margin-top: 3rem ;
           background-color: $middleViolet;
+      }
+      @media (min-width:950px) {
+        &{
+          width: 50%;
+          margin: auto;
+        }
       }
   }
 }
