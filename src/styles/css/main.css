@@ -71,7 +71,7 @@ p {
   align-items: center;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 1.5rem;
   z-index: 10;
 }
 .header_button__bar {
