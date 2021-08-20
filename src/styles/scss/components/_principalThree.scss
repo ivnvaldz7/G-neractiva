@@ -2,6 +2,29 @@
   text-align: center;
   width: 100%;
   padding: 5rem 0;
+  @media (min-width: 800px) {
+    padding: 5rem;
+  }
+}
+
+.principalThree_text{
+  text-align: center;
+  @media (min-width: 800px) {
+    text-align: left;
+    &--paragraph{
+      width: 50%
+    }
+  }
+  &--subtitle{
+    padding: 5rem 0;
+  }
+  &--title{
+    @include title;
+  }
+  &--button{
+    @include button;
+    margin-top: 3rem;
+  }
 }
 .principalThree{
   &_ul {
@@ -21,20 +44,8 @@
         margin-right: 5px;
       }
     }
+    @media (min-width: 800px) {
+      margin: 0;
+    }
   }
-}
-.principalThree_text{
-  text-align: center;
-  &--title{
-    @include title;
-  }
-  &--button{
-    @include button;
-    margin-top: 3rem;
-  }
-}
-.principal_img img{
-  
-  width: 100%;
-  max-width: 600px;
 }

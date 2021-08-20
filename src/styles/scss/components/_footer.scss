@@ -8,7 +8,7 @@
   height: 200px;
   font-family: "Open sans";
   &_logo {
-      width: 100%;
+    width: 100%;
     padding: 3rem;
     text-align: center;
     &--title {
@@ -43,5 +43,20 @@
         font-weight: 400;
         line-height: 25px;
       }
+  }
+  @media (min-width:800px) {
+    &_logo{
+      text-align: left;
+    }
+    &_links {
+      justify-content: flex-start;
+      & a{
+        padding-left: 3rem;
+      }
+    }
+    &_workers{
+      display: flex;
+      justify-content: space-around;
+    }
   }
 }

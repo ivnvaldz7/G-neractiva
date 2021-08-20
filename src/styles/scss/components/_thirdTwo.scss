@@ -1,33 +1,47 @@
 .thirdTwo {
   width: 100%;
-  padding-top: 5rem;
-  &_wrraper{
+  padding: 5rem 0;
+  &_wrraper {
     width: 90%;
     text-align: center;
     margin: 0 auto;
-    &--text{
+    &--text {
       padding: 2rem 0;
     }
-    &--img{
+    &--img {
       min-width: 300px;
       padding: 2rem 0;
-      & img{
+      & img {
         max-width: 100%;
       }
     }
-    @media (min-width: 700px) {
-      &--text{
-        width: 30%;
+    @media (min-width: 800px) {
+      & {
+        display: flex;
+        position: relative;
+        height: 400px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &--text {
+          width: 40%;
+          text-align: center;
+          padding: 0 5rem;
+        }
+        &--img {
+          opacity: 0.4;
+          position: absolute;
+          left: 0;
+          right: 0;
+        }
       }
-    
     }
   }
-  
 }
 .thirdTwo_text {
   width: 90%;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 5rem;
   &--title {
     @include title;
   }
@@ -54,10 +68,10 @@
     }
   }
   @media (min-width: 950px) {
-    &--ul{
+    &--ul {
       display: flex;
       justify-content: space-between;
-      & li{
+      & li {
         width: 25%;
       }
     }

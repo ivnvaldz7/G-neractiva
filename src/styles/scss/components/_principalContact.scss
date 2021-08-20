@@ -1,23 +1,23 @@
 .principalContact {
   text-align: center;
-  &_subtitle {
-    padding: 3rem 0;
-  }
-  &_title {
-    @include title;
-  }
-  &_paragraph {
-    @include paragraph;
-  }
-  &_form {
-    width: 90%;
-    text-align: left;
-    line-height: 30px;
-    margin: 0 auto;
-    &--label {
-      font-size: 16px;
-      color: $violet;
-      display: grid;
+&_subtitle {
+  padding: 3rem 0;
+}
+&_title {
+  @include title;
+}
+&_paragraph {
+  @include paragraph;
+}
+&_form {
+  width: 90%;
+  text-align: left;
+  line-height: 30px;
+  margin: 0 auto;
+  &--label {
+    font-size: 16px;
+    color: $violet;
+    display: grid;
       & input {
         width: 100%;
         height: 40px;
@@ -66,10 +66,26 @@
     }
     &_title,
     &_paragraph{
-        text-align: left;
+      text-align: left;
     }
     &_form{
       width: 75%;
     }
   }
+  @media (min-width: 800px){
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5rem;
+    text-align: left;
+    &_subtitle,
+    &_paragraph{
+      margin: 0;
+    }
+    &_title{
+      grid-column: 1 /3;
+      margin: 0;
+    }
 }
+  
+}
+  

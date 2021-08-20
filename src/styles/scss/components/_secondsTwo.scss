@@ -4,29 +4,31 @@
     text-align: center;
     @media (min-width: 950px) {
         display: flex;
+        padding: 5rem 0 5rem 5rem;
     }
 }
 .secondsTwo_text{
     width: 90%;
     margin: 0 auto;
     padding: 3rem 0;
+    &--title{
+        @include title;
+    }
     @media (min-width: 950px) {
         width: 50%;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        &--title{
+            @include title;
+        }
+        &--paragraph{
+            text-align: left;
+            padding-left: 5rem;
+        }
     }
 }
 .secondsTwo_image img{
     width: 100%;
     max-width: 600px;
-}
-.secondsTwo_text{
-    &--title{
-        @include title;
-    }
-    &--paragraph{
-        text-align: left;
-        padding-left: 5rem;
-    }
 }

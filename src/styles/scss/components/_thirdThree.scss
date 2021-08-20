@@ -26,4 +26,10 @@
         border-radius: 50%;
         margin-bottom: 2rem;
     }
+    @media (min-width: 950px) {
+        margin: 0 1rem;
+        &_paragraph{
+            text-align: left;
+        }
+    }
 }
