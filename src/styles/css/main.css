@@ -54,18 +54,22 @@ p {
   justify-content: space-between;
   align-items: center;
 }
-.nav_img {
+.nav_img a {
   display: block;
   width: 135px;
   height: 5rem;
+  position: relative;
+  z-index: 1;
+  left: -25px;
   background: url("/src/assets/images/Géneractiva_Logo_Isologo_Color.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (min-width: 500px) {
-  .nav_img {
+  .nav_img a {
     background-image: url(/src/assets/images/Géneractiva_Logo_Logotipo_color.png);
+    position: inherit;
   }
 }
 .nav_button {
@@ -74,6 +78,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 .nav_button--bar {
   background-color: #5210bc;
@@ -103,11 +109,17 @@ p {
   height: 100vh;
   background-color: white;
   text-align: center;
-  transform: translateX(0%);
+  transform: translateY(-130%);
   transition: 0.5s ease;
 }
+.nav_ul--show {
+  transform: translateY(0%);
+}
+.nav_ul li {
+  padding: 1em;
+}
 .nav_ul--a {
-  font-size: 30px;
+  font-size: 20px;
 }
 .nav_ul--button {
   font-size: 15px;
@@ -121,6 +133,22 @@ p {
   -webkit-box-shadow: 7px 7px 18px -13px #3E0C8E;
   -moz-box-shadow: 7px 7px 18px -13px #3E0C8E;
   cursor: pointer;
+}
+@media (min-width: 800px) {
+  .nav_button {
+    display: none;
+  }
+  .nav_ul {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    position: static;
+    height: 5rem;
+    transform: translateY(0);
+  }
+  .nav_ul--a {
+    font-size: 16px;
+  }
 }
 
 .main {
